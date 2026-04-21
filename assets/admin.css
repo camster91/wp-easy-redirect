@@ -1,0 +1,116 @@
+/**
+ * WP Easy Redirect — Admin Styles
+ */
+
+.wer-wrap {
+	max-width: 820px;
+}
+
+.wer-wrap h1 small {
+	font-weight: normal;
+	color: #999;
+	font-size: 0.5em;
+	margin-left: 6px;
+}
+
+.wer-card {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 20px 24px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+.wer-card h2 {
+	margin-top: 0;
+	padding-top: 0;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+/* Toggle switch */
+.wer-toggle {
+	position: relative;
+	display: inline-block;
+	width: 46px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.wer-toggle input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.wer-toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	inset: 0;
+	background-color: #ccc;
+	border-radius: 24px;
+	transition: background-color 0.2s;
+}
+
+.wer-toggle-slider::before {
+	content: "";
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background: #fff;
+	border-radius: 50%;
+	transition: transform 0.2s;
+}
+
+.wer-toggle input:checked + .wer-toggle-slider {
+	background-color: #2271b1;
+}
+
+.wer-toggle input:checked + .wer-toggle-slider::before {
+	transform: translateX(22px);
+}
+
+/* Redirects table */
+.wer-redirects-table input.regular-text,
+.wer-redirects-table select {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.wer-redirects-table textarea {
+	width: 100%;
+}
+
+.wer-remove-row {
+	color: #b32d2e !important;
+}
+
+/* Help table */
+.wer-help-table {
+	width: 100%;
+}
+
+.wer-help-table th {
+	text-align: left;
+	width: 140px;
+	padding: 4px 8px;
+}
+
+.wer-help-table td {
+	padding: 4px 8px;
+}
+
+.wer-help-table code {
+	background: #f0f0f1;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+/* Admin bar notice */
+#wp-admin-bar-wer-notice .ab-icon {
+	margin-right: 4px;
+}
